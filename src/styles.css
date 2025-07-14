@@ -1,0 +1,37 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+:root {
+  --primary-bg: blue;
+  --secondary-bg: rgb(151, 49, 49);
+  --text-color: #fff;
+  --hover-effect: scale(1.05);
+}
+
+:root,
+[data-theme="light"] {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --primary-color: #2563eb;
+  --border-color: #e5e7eb;
+}
+
+/* Тёмная тема */
+[data-theme="dark"] {
+  --bg-color: #1a1a1a;
+  --text-color: #f0f0f0;
+  --primary-color: #172b4d;
+  --border-color: #4b5563;
+}
+
+.button {
+  background: var(--primary-color);
+  border: 1px solid var(--border-color);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+.h2 {
+  color: var(--primary-color);
+}
